@@ -10,6 +10,7 @@
     , "docker:nuke": "npm run docker:stop; npm run docker:remove-containers; npm run docker:remove-images"
     , "docker:remove-containers": "docker-compose rm php; docker-compose rm nginx"
     , "docker:remove-images": "docker rmi $(docker images -q)"
+    , "docker:bash": "docker-compose run php bash"
   }
   , "devDependencies": {}
 }
