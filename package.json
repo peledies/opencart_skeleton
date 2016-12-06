@@ -11,6 +11,7 @@
     , "docker:remove-containers": "docker-compose rm php; docker-compose rm nginx"
     , "docker:remove-images": "docker rmi $(docker images -q)"
     , "docker:bash": "docker-compose run php bash"
+    , "opencart:install": "etc/scripts/install_opencart.sh"
   }
   , "devDependencies": {}
 }
