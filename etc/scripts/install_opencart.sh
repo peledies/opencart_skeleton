@@ -22,3 +22,9 @@ chmod 0755 www/admin/config.php
 
 # Remove tmp directory
 rm -rf tmp
+
+# Restart nginx
+docker-compose restart nginx
+
+# Restart php
+docker-compose restart php
