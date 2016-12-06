@@ -9,15 +9,15 @@ Creates linked php and nginx containers and starts them up using `docker-compose
 $ npm install
 ```
 
-# Utilities
+# Docker Utilities
 
-#### Start
+#### docker:start
 Starts the docker environment
 ```
 $ npm run docker:start
 ```
 
-#### Stop
+#### docker:stop
 Stops the docker environment
 ```
 $ npm run docker:stop
@@ -33,6 +33,14 @@ $ npm run docker:nuke
 ```
 $ npm run docker:logs
 ```
+
+# Opencart Utilities
+
+#### opencart:install
+```
+$ npm run opencart:install
+```
+
 
 # Configuration
 
