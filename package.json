@@ -12,6 +12,7 @@
     , "docker:remove-images": "docker rmi $(docker images -q)"
     , "docker:bash": "docker-compose run php bash"
     , "opencart:install": "etc/scripts/install_opencart.sh"
+    , "opencart:DBIP": "docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' opencart_mysql_1"
   }
   , "devDependencies": {}
 }
